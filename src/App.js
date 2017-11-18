@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import YearDropDown from './components/yearDropDown/index.js'
+import YearDropDown from './components/yearDropDown/index.js';
+import PastPrice from './components/fetchPrice/index.js';
 
 class App extends Component {
   render() {
@@ -14,8 +15,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>HELLLLOOOOOO</h1>
         <YearDropDown />
+        <PastPrice />
       </div>
     );
   }
