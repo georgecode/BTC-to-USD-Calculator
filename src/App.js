@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 // import YearDropDown from './components/yearDropDown/index.js';
 import PastPrice from './components/fetchPrice/index.js';
 import DateInput from './components/dateInput/index.js';
+import DatePicker from './components/datePicker/index.js';
+
+
 
 class App extends Component {
   render() {
@@ -11,6 +14,7 @@ class App extends Component {
       <div className="App">
         <PastPrice />
         <DateInput />
+        <DatePicker />
       </div>
     );
   }
