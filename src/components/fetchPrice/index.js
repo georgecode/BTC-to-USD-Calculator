@@ -30,6 +30,11 @@ componentDidMount(){
 render(){
 	return(
 		<div>
+		<h1>SPACE</h1>
+		<h1>SPACE</h1>
+		<h1>SPACE</h1>
+		<h1>SPACE</h1>
+		<h1>SPACE</h1>
 		<h1>BTC Price</h1>
 		<h1>{this.state.price}</h1>
 		</div>
