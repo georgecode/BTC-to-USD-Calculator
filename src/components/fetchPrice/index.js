@@ -5,11 +5,18 @@ class PastPrice extends Component{
 		super();
 		this.state ={
 			price:[],
+			
 		};
 	}
 
 //How to fix cors preflight	
 //https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
+
+//date format
+//YYYY-MM-DD
+
+//BTC First Date 2010-08-17
+
 componentDidMount(){
 	const proxyurl = "https://cors-anywhere.herokuapp.com/"
 	const url ='https://blockchain.info/charts/market-price?timespan=1days&start=2016-01-01&format=json'
