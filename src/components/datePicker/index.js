@@ -19,9 +19,16 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
+
+import PastPrice from '../fetchPrice/index.js';
+
 import "./style.css"
  
 import 'react-datepicker/dist/react-datepicker.css';
+
+
+import FetchPrice from '../helpers/fetchPrice.js'
+
  
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
@@ -36,11 +43,12 @@ class CalendarPicker extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      startDate: moment(),
-
+      startDate: moment("2010-08-17 23:02:23"),
+      price:"",
 
     };
     this.handleChange = this.handleChange.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
  
   handleChange(date) {
@@ -48,8 +56,32 @@ class CalendarPicker extends React.Component {
       startDate: date,
 
     });
-    	console.log(moment("2010-08-17 23:02:23")._d)
+
+    	console.log(this.state.startDate._d)
+    	//console.log(moment("2010-08-17 23:02:23").format().slice(0,10))
+    	// console.log(Promise.resolve(FetchPrice()))
     // console.log(typeof this.state.startDate._d)
+  }
+
+
+  onClick(){
+  	let date = this.state.startDate.format().slice(0,10)
+  	console.log(date)
+  	// FetchPrice(date).then(price =>{
+  	// 	console.log(price)
+  	// });
+  	   // FetchPrice(date).then(function(result) {
+      //   console.log(result);
+    // });
+
+//console.log(FetchPrice("2017-08-24").then(value =>{return value}))
+//FetchPrice("2017-08-24").then(value =>{console.log(value)})
+//FetchPrice("2017-08-24").then(value =>{this.setState({price: value,})})
+
+FetchPrice(this.state.startDate.format().slice(0,10)).then(value =>{this.setState({price: value,})})
+
+//this.setState({price: value,})
+
   }
  
   render() {
@@ -66,8 +98,9 @@ class CalendarPicker extends React.Component {
     	showYearDropdown
     	dropdownMode="select"
     	/>
-    	<h1>{this.state.startDate._d.toString()}</h1>
-    	<h1>X</h1>
+    	<PastPrice date={this.state.startDate.format().slice(0,10)} />
+    	<button onClick={this.onClick}>Get Price</button>
+    	<h1>This.state.price = {this.state.price}</h1>
     	</div>
     )
   }
@@ -77,7 +110,7 @@ export default CalendarPicker
 
 
 
-
+//<PastPrice words="george" date={this.state.startDate.format().slice(0,10)} />
 
 
 
