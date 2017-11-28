@@ -1,6 +1,6 @@
 // import React, { Component } from 'react';
 
-console.log("Helllllooooo")
+//console.log("Helllllooooo")
 
 
 
@@ -30,12 +30,12 @@ const FetchPrice = (date) => {
 
 // FetchPrice("2017-08-24").then
 
-FetchPrice("2017-08-24")
+//FetchPrice("2017-08-24")
 
 
-console.log(FetchPrice("2017-08-24").then(value =>{
-	return value
-}))
+// console.log(FetchPrice("2017-08-24").then(value =>{
+// 	return value
+// }))
 
 // const FetchPrice = () =>{
 // 	Promise.resolve(FetchPromise()).then(value => {
