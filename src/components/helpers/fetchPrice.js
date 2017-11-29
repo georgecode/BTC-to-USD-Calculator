@@ -1,7 +1,14 @@
-// import React, { Component } from 'react';
 
-//console.log("Helllllooooo")
+//blockchain.info API
+//Example URL
+//https://blockchain.info/charts/market-price?timespan=1days&start=2017-11-21&format=json
+//date format
+//YYYY-MM-DD
+//blockchain.info's First BTC Date 2010-08-17
 
+
+//How to fix cors preflight	issue
+//https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
 
 
 const FetchPrice = (date) => {
@@ -9,42 +16,15 @@ const FetchPrice = (date) => {
 	//const url ='https://blockchain.info/charts/market-price?timespan=1days&start=2016-01-01&format=json'
 	let url =`https://blockchain.info/charts/market-price?timespan=1days&start=${date}&format=json`
 
-
 	return fetch(proxyurl + url)
 	.then(results =>{
 		return results.json();
 	}).then(data => {
-		//let price = data.values[0].y 
-
 		return data.values[0].y  
-
-		//this.setState({price: price});
-		//console.log(price)
-		//return price
-		// console.log(this.state.price)
-		// console.log(`hello ${date} is todays date`)
 	}).catch()
 
+}
 
-}//END FetchPrice
-
-// FetchPrice("2017-08-24").then
-
-//FetchPrice("2017-08-24")
-
-
-// console.log(FetchPrice("2017-08-24").then(value =>{
-// 	return value
-// }))
-
-// const FetchPrice = () =>{
-// 	Promise.resolve(FetchPromise()).then(value => {
-// 		return value
-// 	})
-// }
-
-
-// console.log(FetchPromise().resolved)
 export default FetchPrice;
 
 
