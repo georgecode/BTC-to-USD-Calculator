@@ -1,7 +1,7 @@
+//How to SVG in react
+//https://css-tricks.com/creating-svg-icon-system-react/
 import React, { Component } from 'react';
-// import './App.css';
-// import btcCoin from './images/btcCoin.svg';
-// import CalendarPicker from './components/datePicker/index.js';
+
 
 class BtcCoinSVG extends Component {
 

@@ -7,9 +7,15 @@ rgb(245,146,47)*/
 rgb(77,77,77)*/
 
 .App {
-  text-align: center;
-  background-color: rgba(245,146,47,0)
+/*  text-align: center;
+  background-color: rgba(245,146,47,0);
+  width:90%;
+  margin:0px 5% 0px 5%;*/
 }
+
+/*input{
+  font-size: 2em;
+}*/
 
 ul{
   list-style-type: none;
@@ -53,16 +59,15 @@ ul{
   left:15%;
 }
 
+
+/*How to SVG Animation
+https://codepen.io/marcywilliamspudalov/pen/wGKQRw*/
 .btcCoin {
- /* animation: App-logo-spin infinite 20s linear;
-  height: 80px;*/
     animation: rocking 30s linear infinite;
     -webkit-animation: rocking 30s linear infinite;
     
     position: absolute;
     z-index:-2;
-
-
 }
 
 @keyframes rocking{
@@ -85,7 +90,19 @@ ul{
 }
 
 
+.calculator{
+  /*text-align: center;*/
+  background-color: rgba(245,146,47,0);
+  background-color: rgba(255,255,255,.5);
+  width:92%;
+ /* margin-right: 5%;
+  margin-left: 5%;*/
+  margin:0px 2% 0px 2%;
+  padding:2%;
+  margin-top: 10px;
+  box-shadow: 0 1px 7px rgba(0,0,0,.05);
 
+}
 
 
 

@@ -62,7 +62,7 @@ class CalendarPicker extends React.Component {
   render() {
     return( 
     	<div>
-	    	<h1>Buy Date</h1>
+	    	<span className="buy-date">Buy Date :</span>
 
 	    	<DatePicker
 	    	fixedHeight
@@ -73,6 +73,7 @@ class CalendarPicker extends React.Component {
 	        showMonthDropdown
 	    	showYearDropdown
 	    	dropdownMode="select"
+	    	className="xdate-picker"
 	    	/>
 
 	    	<MoneyInput 
