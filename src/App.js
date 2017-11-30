@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import btcCoin from './images/btcCoin.svg';
 import CalendarPicker from './components/datePicker/index.js';
+
+import BtcCoinSVG from "./images/btcCoinSVG.js"
 
 class App extends Component {
   render() {
     return (
+
       <div className="App">
-        <img src={btcCoin} className="btcCoin small" alt="bitcoin" />
+
+        <BtcCoinSVG svgClass="btcCoin" width="100" fill="#FFBF80" opasity="0.8" />
         <CalendarPicker />
-        <img src={btcCoin} className="btcCoin med" alt="bitcoin" />
-        <img src={btcCoin} className="btcCoin large" alt="bitcoin" />
+        <BtcCoinSVG  svgClass="btcCoin big" width="900" fill="#FFBF80" opasity="0.1"/>
       </div>
     );
   }
 }
 
 export default App;
-
-
-// import logo from './logo.svg';
-
-//<img src={logo} className="App-logo" alt="logo" />
