@@ -1,9 +1,33 @@
 .header{
-	background-color: #FFBF80;
+	/*background-color: #FFBF80;*/
 	background-color: #FFF;
-	color:black;
-	height:5em;
-	box-shadow: 0px 1px 0px #000000;
-	text-align: center;
+	/*color:black;*/
+	height:3em;
+	box-shadow: 0px 1px 2px #000000;
+	color:rgb(76,76,76);
+	/*text-align: center;*/
 }
 
+.header .btc{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.header h1{
+	color:rgb(76,76,76);
+	font-weight: bold;
+	font-style: italic;
+	
+}
+
+.bitcoin{
+	position: relative;
+	display:inline;
+	top:-10px;
+	font-size: 1.5em;
+}
+
+h1.millionaire{
+	font-size: 0.5em;
+	margin-left: 10%;
+}

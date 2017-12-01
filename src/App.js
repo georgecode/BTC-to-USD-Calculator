@@ -14,10 +14,11 @@ class App extends Component {
         <Header />
        
         <BtcCoinSVG svgClass="btcCoin" width="100" fill="#FFBF80" opasity="0.95" />
+        
         <div className="calculator">
           <CalendarPicker />
         </div>
-        <BtcCoinSVG  svgClass="btcCoin big" width="900" fill="#FFBF80" opasity="0.4"/>
+        <BtcCoinSVG  svgClass="btcCoin big" width="900" fill="#FFBF80" opasity="0.7"/>
         
       </div>
     );

@@ -44,12 +44,15 @@ class MoneyInput extends Component{
           <input className="amountField" type="number" min="0.01" step="0.01" value={this.state.inputPrice} onChange={this.handleChange} />
           </div>
         </label>
-        <input className="calculateBtn" type="submit" value="Calculate Todays Value" />
+        <input className="calculateBtn" type="submit" value="Calculate" />
       </form>
 
-      <h1>Value Today ${this.state.usdValue.toLocaleString("currency")}</h1>
+      <h1 className="TodaysValue">
+        Value Today 
+        <span>${this.state.usdValue.toLocaleString("currency")}</span>
+      </h1>
 
-      <ul>
+      <ul className="extraData">
 	      <li>Buy Date BTC value ${this.state.pastPrice} </li>
 	      <li>BTC: {this.state.numBTC}</li>
 	      <li>1 BTC ~ ${this.props.todaysPrice.toLocaleString("currency")}</li>
