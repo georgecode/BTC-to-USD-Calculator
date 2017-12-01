@@ -1,8 +1,9 @@
 .header{
 	background-color: #FFBF80;
+	background-color: #FFF;
 	color:black;
 	height:5em;
-	margin-top: -21px;
 	box-shadow: 0px 1px 0px #000000;
 	text-align: center;
 }
+

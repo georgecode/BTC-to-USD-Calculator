@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FetchPrice from '../helpers/fetchPrice.js'
+import "./style.css"
 
 class MoneyInput extends Component{
  constructor(props) {
@@ -34,13 +35,16 @@ class MoneyInput extends Component{
 
   render() {
     return (
-    <div>
+    <div className="moneyInput">
+      Amount:
       <form onSubmit={this.handleSubmit}>
         <label>
-          Amount:
-          <input type="number" min="0.01" step="0.01" value={this.state.inputPrice} onChange={this.handleChange} />
+          <div className="currency">
+          <span className="usdIcon">$</span>
+          <input className="amountField" type="number" min="0.01" step="0.01" value={this.state.inputPrice} onChange={this.handleChange} />
+          </div>
         </label>
-        <input type="submit" value="Submit" />
+        <input className="calculateBtn" type="submit" value="Calculate Todays Value" />
       </form>
 
       <h1>Value Today ${this.state.usdValue.toLocaleString("currency")}</h1>

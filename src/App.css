@@ -92,15 +92,15 @@ https://codepen.io/marcywilliamspudalov/pen/wGKQRw*/
 
 .calculator{
   /*text-align: center;*/
-  background-color: rgba(245,146,47,0);
-  background-color: rgba(255,255,255,.5);
+  /*background-color: rgba(245,146,47,0);*/
+  background-color: rgba(255,255,255,0.8);
   width:92%;
  /* margin-right: 5%;
   margin-left: 5%;*/
   margin:0px 2% 0px 2%;
   padding:2%;
   margin-top: 10px;
-  box-shadow: 0 1px 7px rgba(0,0,0,.05);
+  box-shadow: 0 1px 7px rgba(0,0,0,0.5);
 
 }
 

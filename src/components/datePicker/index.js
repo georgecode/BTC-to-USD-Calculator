@@ -63,7 +63,7 @@ class CalendarPicker extends React.Component {
     return( 
     	<div>
 	    	<span className="buy-date">Buy Date :</span>
-
+        <div className="datePick">
 	    	<DatePicker
 	    	fixedHeight
 	        selected={this.state.startDate}
@@ -75,7 +75,7 @@ class CalendarPicker extends React.Component {
 	    	dropdownMode="select"
 	    	className="xdate-picker"
 	    	/>
-
+        </div>
 	    	<MoneyInput 
 	    	todaysPrice={this.state.todaysPrice} 
 	    	startDate={this.state.startDate.format().slice(0,10)} 

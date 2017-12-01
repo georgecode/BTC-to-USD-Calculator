@@ -17,7 +17,7 @@ class BtcCoinSVG extends Component {
 
 BtcCoinSVG.defaultProps = {
   width: '500',
-  fill: '#02ffff',
+  fill: '#FFBF80',
   opasity: '1',
   svgClass: 'btcCoin',
   
