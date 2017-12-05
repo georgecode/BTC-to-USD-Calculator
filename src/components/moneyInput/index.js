@@ -53,9 +53,9 @@ class MoneyInput extends Component{
       </h1>
 
       <ul className="extraData">
-	      <li>Buy Date BTC value ${this.state.pastPrice} </li>
-	      <li>BTC: {this.state.numBTC}</li>
-	      <li>1 BTC ~ ${this.props.todaysPrice.toLocaleString("currency")}</li>
+	      <li>Buy Date 1 BTC ~ ${this.state.pastPrice} </li>
+	      <li>Number of BTC: {this.state.numBTC}</li>
+	      <li>Today 1 BTC ~ ${this.props.todaysPrice.toLocaleString("currency")}</li>
       </ul>
 
      </div> 
