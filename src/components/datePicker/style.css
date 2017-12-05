@@ -26,18 +26,21 @@
 	user-select: none;
 }
 
-.react-datepicker__input-container input[type=text]:focus{
+/*.react-datepicker__input-container input[type=text]:focus{
 	-webkit-appearance: none;
-/*	    color: transparent;
+	    color: transparent;
     	text-shadow: 0px 0px 0px #000;
-    	outline: none;*/
+    	outline: none;
 }
-.react-datepicker__day{
-	text-decoration: none;
+*/
 
-}
 
-/*input[type=submit]*/
-/*<div className="datePick">*/
 
-/*className="xdate-picker"*/
+
+
+
+
+
+
+
+
