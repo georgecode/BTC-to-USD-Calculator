@@ -3,37 +3,6 @@
 	float:left;
 }
 
-/*.xdate-picker{
-	margin-top: 10px;
-	margin-bottom: 20px;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
-	width:100%;
-}
-
-input.xdate-picker{
-	width:100%;
-}
-.xdate-picker react-datepicker-ignore-onclickoutside{
-	width:100%;
-}*/
-
-/*.datePick{
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
-	margin-top: 10px;
-	margin-bottom: 30px;
-	background-color: #FFFFFF;
-
-	width:100%;
-}*/
-
-/*.react-datepicker__input-container{
-	width:100px;
-}*/
-
-/*.xdate-picker{
-	width:100%;
-}*/
-
 .react-datepicker__input-container{
 	width:100%;
 	/*background-color: red;*/
@@ -41,10 +10,6 @@ input.xdate-picker{
 
 .react-datepicker__input-container input[type=text]{
 	
-
-
-
-
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
 	margin-top: 10px;
 	margin-bottom: 30px;
@@ -59,15 +24,17 @@ input.xdate-picker{
 	/*Fix's ios input cursor shitty-ness*/
 	-webkit-user-select: none; 
 	user-select: none;
-
-	
-	/*background-color: red;*/
 }
 
 .react-datepicker__input-container input[type=text]:focus{
-	    color: transparent;
+	-webkit-appearance: none;
+/*	    color: transparent;
     	text-shadow: 0px 0px 0px #000;
-    	outline: none;
+    	outline: none;*/
+}
+.react-datepicker__day{
+	text-decoration: none;
+
 }
 
 /*input[type=submit]*/

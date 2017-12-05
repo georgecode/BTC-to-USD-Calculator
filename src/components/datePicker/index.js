@@ -67,8 +67,6 @@ class CalendarPicker extends React.Component {
     	<div>
 	    	<span className="buy-date">Buy Date :</span>
         
-
-
 	    	<DatePicker
 	    	  fixedHeight
 	        selected={this.state.startDate}
@@ -81,22 +79,11 @@ class CalendarPicker extends React.Component {
           withPortal
 	    	/>
 
-
-
-
-        
-
-
-
-
-
 	    	<MoneyInput 
-	    	todaysPrice={this.state.todaysPrice} 
-	    	startDate={
-          
-            this.state.startDate.format().slice(0,10)
-          
-        } 
+  	    	todaysPrice={this.state.todaysPrice} 
+  	    	startDate={  
+              this.state.startDate.format().slice(0,10) 
+          } 
 	    	/>
 	    	
     	</div>
