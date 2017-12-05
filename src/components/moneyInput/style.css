@@ -25,7 +25,15 @@ input.calculateBtn{
 
 input[type=submit] {
 	font-weight: bold;
+		-webkit-appearance:none;
+	 -webkit-border-radius:0px;	
 }
+
+
+
+
+
+
 
 /*.amountField{
 	display: block;
