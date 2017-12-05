@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FetchPrice from '../helpers/fetchPrice.js'
+import "./style.css"
 
 class MoneyInput extends Component{
  constructor(props) {
@@ -34,21 +35,27 @@ class MoneyInput extends Component{
 
   render() {
     return (
-    <div>
+    <div className="moneyInput">
+      Amount:
       <form onSubmit={this.handleSubmit}>
         <label>
-          Amount:
-          <input type="number" min="0.01" step="0.01" value={this.state.inputPrice} onChange={this.handleChange} />
+          <div className="currency">
+          <span className="usdIcon">$</span>
+          <input className="amountField" type="number" min="0.01" step="0.01" value={this.state.inputPrice} onChange={this.handleChange} />
+          </div>
         </label>
-        <input type="submit" value="Submit" />
+        <input className="calculateBtn" type="submit" value="Calculate" />
       </form>
 
-      <h1>Value Today ${this.state.usdValue.toLocaleString("currency")}</h1>
+      <h1 className="TodaysValue">
+        Value Today 
+        <span>${this.state.usdValue.toLocaleString("currency")}</span>
+      </h1>
 
-      <ul>
-	      <li>Buy Date BTC value ${this.state.pastPrice} </li>
-	      <li>BTC: {this.state.numBTC}</li>
-	      <li>1 BTC ~ ${this.props.todaysPrice.toLocaleString("currency")}</li>
+      <ul className="extraData">
+	      <li>Buy Date 1 BTC ~ ${this.state.pastPrice} </li>
+	      <li>Number of BTC: {this.state.numBTC}</li>
+	      <li>Today 1 BTC ~ ${this.props.todaysPrice.toLocaleString("currency")}</li>
       </ul>
 
      </div> 
