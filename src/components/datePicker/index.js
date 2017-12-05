@@ -67,19 +67,29 @@ class CalendarPicker extends React.Component {
     	<div>
 	    	<span className="buy-date">Buy Date :</span>
         <div className="datePick">
+
+
 	    	<DatePicker
-	    	fixedHeight
+	    	  fixedHeight
 	        selected={this.state.startDate}
 	        onChange={this.handleChange}
 	        minDate={moment("2010-08-17")}
 	        maxDate={moment()}
-	        showMonthDropdown
-	    	showYearDropdown
-	    	dropdownMode="select"
-	    	className="xdate-picker"
-        withPortal
+	    	  showYearDropdown
+	    	  dropdownMode="select"
+	    	  readOnly
+          withPortal
 	    	/>
+
+
+
+
         </div>
+
+
+
+
+
 	    	<MoneyInput 
 	    	todaysPrice={this.state.todaysPrice} 
 	    	startDate={
