@@ -55,38 +55,35 @@ class CalendarPicker extends React.Component {
  
   handleChange(date) {
     //Fixes backed out calendar form
-    
+    if(date != null){
       this.setState({
         startDate: date,
       });
-    
+    }
   }
 
   render() {
     return( 
     	<div>
 	    	<span className="buy-date">Buy Date :</span>
-        <div className="datePick">
+        
 	    	<DatePicker
-	    	fixedHeight
+	    	  fixedHeight
 	        selected={this.state.startDate}
 	        onChange={this.handleChange}
 	        minDate={moment("2010-08-17")}
 	        maxDate={moment()}
-	        showMonthDropdown
-	    	showYearDropdown
-	    	dropdownMode="select"
-	    	className="xdate-picker"
-        
+	    	  showYearDropdown
+	    	  dropdownMode="select"
+	    	  readOnly
+          withPortal
 	    	/>
-        </div>
+
 	    	<MoneyInput 
-	    	todaysPrice={this.state.todaysPrice} 
-	    	startDate={
-          
-            this.state.startDate.format().slice(0,10)
-          
-        } 
+  	    	todaysPrice={this.state.todaysPrice} 
+  	    	startDate={  
+              this.state.startDate.format().slice(0,10) 
+          } 
 	    	/>
 	    	
     	</div>
