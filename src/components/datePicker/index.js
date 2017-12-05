@@ -66,7 +66,7 @@ class CalendarPicker extends React.Component {
     return( 
     	<div>
 	    	<span className="buy-date">Buy Date :</span>
-        <div className="datePick">
+        
 
 
 	    	<DatePicker
@@ -84,7 +84,7 @@ class CalendarPicker extends React.Component {
 
 
 
-        </div>
+        
 
 
 
