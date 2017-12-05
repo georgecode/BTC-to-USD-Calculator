@@ -55,11 +55,11 @@ class CalendarPicker extends React.Component {
  
   handleChange(date) {
     //Fixes backed out calendar form
-    
+    if(date != null){
       this.setState({
         startDate: date,
       });
-    
+    }
   }
 
   render() {
@@ -77,7 +77,7 @@ class CalendarPicker extends React.Component {
 	    	showYearDropdown
 	    	dropdownMode="select"
 	    	className="xdate-picker"
-        
+        withPortal
 	    	/>
         </div>
 	    	<MoneyInput 
