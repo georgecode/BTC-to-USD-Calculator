@@ -6,53 +6,11 @@ rgb(245,146,47)*/
 #4d4d4d
 rgb(77,77,77)*/
 
-.App {
-/*  text-align: center;
-  background-color: rgba(245,146,47,0);
-  width:90%;
-  margin:0px 5% 0px 5%;*/
-}
-
-/*input{
-  font-size: 2em;
-}*/
+/*http://chemical-number.surge.sh*/
 
 ul{
   list-style-type: none;
 }
-
-/*.small{
-  height: 150px;
-  animation: rocking 30s linear infinite;
-  -webkit-animation: rocking 30s linear infinite;
-  z-index: -1;
-  position: absolute;
- 
-}
-
-
-
-.large{
-  height: 1200px;
-   animation: rocking 30s linear infinite;
-  -webkit-animation: rocking 30s linear infinite;
-  z-index: -3;
-  top: -50%;
-    left: 135px;
-    position: absolute;
-    overflow: hidden;
-    color:red;
-}
- 
-.med{
-    height: 300px;
-   animation: rocking 30s linear infinite;
-  -webkit-animation: rocking 30s linear infinite;
-  z-index: -2;
-  float:left;
-
-} */
-
 
 .big{
   top:1px;
@@ -91,12 +49,8 @@ https://codepen.io/marcywilliamspudalov/pen/wGKQRw*/
 
 
 .calculator{
-  /*text-align: center;*/
-  /*background-color: rgba(245,146,47,0);*/
   background-color: rgba(255,255,255,0.8);
   width:92%;
- /* margin-right: 5%;
-  margin-left: 5%;*/
   margin:0px 2% 0px 2%;
   padding:2%;
   margin-top: 10px;
@@ -110,26 +64,3 @@ https://codepen.io/marcywilliamspudalov/pen/wGKQRw*/
 
 
 
-
-
-/*OLD Creat-react-app STUFF OLD STUFF*/
-
-/*.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}*/
-
-/*@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/

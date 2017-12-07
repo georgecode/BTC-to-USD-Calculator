@@ -6,7 +6,7 @@ class MoneyInput extends Component{
  constructor(props) {
     super(props);
     this.state = {
-    	inputPrice: 0,
+    	inputPrice:"",
     	numBTC:0,
     	usdValue:0,
     	pastPrice:0,
