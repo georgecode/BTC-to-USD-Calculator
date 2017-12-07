@@ -72,7 +72,8 @@ body {
 }
 
 html, body{
-  overflow: hidden !important;
+  overflow-x: hidden;
+ /* overflow: hidden !important;*/
   width: 100%;
   /*overflow-y: scroll !important;*/
 
@@ -80,7 +81,7 @@ html, body{
 
 .App {
   position:relative;
-  overflow: hidden !important;;
+  /*overflow: hidden !important;;*/
 }
 
 
