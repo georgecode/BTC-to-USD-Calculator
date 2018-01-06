@@ -5,7 +5,7 @@
 ## Mission
 Any time Bitcoin is discussed someone always says I’d be sooooo rich if I bought X dollars worth of Bitcoin on X date.  The goal of this project is to show the user exactly how rich they would have been had they bought x dollars worth of Bitcoin on X date.
 
-![page-gif](/demo.gif)
+![page-gif](public/demoTTFOMO.gif)
 
 ## Getting Started
 Getting started is easy just navigate to [www.TasteTheFOMO.com](http://www.tastethefomo.com) , pick a date and enter a buy amount, the app will return the amount of money you'd have today for that buy in.
