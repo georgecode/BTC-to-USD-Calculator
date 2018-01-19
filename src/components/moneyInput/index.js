@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import FetchPrice from '../helpers/fetchPrice.js'
 import "./style.css"
 
+
+//GA ID
+// UA-112754902-1
+
 class MoneyInput extends Component{
  constructor(props) {
     super(props);
