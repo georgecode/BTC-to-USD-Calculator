@@ -43,7 +43,7 @@ class MoneyInput extends Component{
 
 
       // TIME OUT END
-    }.bind(this), 2000);
+    }.bind(this), 500);
        // TIME OUT END
 
 
