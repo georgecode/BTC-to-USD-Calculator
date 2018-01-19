@@ -17,7 +17,7 @@ Just give it a try yourself and you will see how effective it is..... Do you tas
 
 
 ## Usability and Testing
-A major part of this project was to ensuring the app was simple and intuitive to use. Through out the development of this project many ideas were tested in the field before they were pushed to the production version of this app. Testing beta versions allowed optimization of unforeseen pains using the app, allowing for a much better user experience on production versions.
+A major part of this project was to ensuring the app was simple and intuitive to use. Throughout the development of this project many ideas were tested in the field before they were pushed to the production version of this app. Testing beta versions allowed optimization of unforeseen pains using the app, allowing for a much better user experience on production versions.
 
 ## Contributors
 - [George Czurlanis](https://github.com/georgecode) App author and sufferer of the Crypto FOMO.
