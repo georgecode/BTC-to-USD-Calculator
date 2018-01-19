@@ -1,6 +1,7 @@
 .calculateBtn{
 	display:block;
 	margin-top:10px;
+	color:white;
 }
 
 input.calculateBtn{
@@ -14,7 +15,7 @@ input.calculateBtn{
 input[type=submit] {
 	font-weight: bold;
 		-webkit-appearance:none;
-	 -webkit-border-radius:0px;	
+	/* -webkit-border-radius:0px;*/	
 }
 
 input.amountField{
@@ -77,3 +78,37 @@ ul.extraData{
 ul.extraData li{
 	margin-bottom: 20px;
 }
+
+
+/*CALCULATE BUTTON ANIMATION*/
+@keyframes pulse {
+  from {
+  	border-radius: 100px;
+  	background-color: rgba(245,146,47,0.9);
+    width: 94%;
+    margin-right: 3%;
+	margin-left: 3%;
+/*	padding-top:13px;
+	padding-bottom:13px;*/
+  }
+
+  to {
+  	background-color: rgba(245,146,47,1);
+    width: 100%;
+    margin-right: 0%;
+	margin-left: 0%;
+/*	padding-top:15px;
+	padding-bottom:15px;*/	    
+  }
+}
+
+.animate{
+	color:white;
+	border-radius: 0px;
+	animation-duration: 1s;
+  	animation-name: pulse;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+}
+
+

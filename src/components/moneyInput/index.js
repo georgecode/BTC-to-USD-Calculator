@@ -10,6 +10,7 @@ class MoneyInput extends Component{
     	numBTC:0,
     	usdValue:0,
     	pastPrice:0,
+      calculateBtn:"calculateBtn"
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -21,13 +22,31 @@ class MoneyInput extends Component{
   }
 
   handleSubmit(event) {
+
+    this.setState({calculateBtn:"calculateBtn animate"});
+
     FetchPrice(this.props.startDate)
     .then(value =>{
+
+
+      // TIME OUT START
+      setTimeout(function(){
+      // TIME OUT START
+
+
     	this.setState({
     		pastPrice: (value),
     		numBTC: (this.state.inputPrice / value),
     		usdValue:(this.state.inputPrice / value) * this.props.todaysPrice,
+        calculateBtn:"calculateBtn"
     	})
+
+
+      // TIME OUT END
+    }.bind(this), 500);
+       // TIME OUT END
+
+
     })
     event.preventDefault();
   }
@@ -44,7 +63,7 @@ class MoneyInput extends Component{
           <input className="amountField" type="number" min="0.01" step="0.01" value={this.state.inputPrice} onChange={this.handleChange} />
           </div>
         </label>
-        <input className="calculateBtn" type="submit" value="Calculate" />
+        <input className={this.state.calculateBtn} type="submit" value="Calculate" />
       </form>
 
       <h1 className="TodaysValue">
