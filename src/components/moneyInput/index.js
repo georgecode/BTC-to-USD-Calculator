@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import FetchPrice from '../helpers/fetchPrice.js'
 import "./style.css"
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-112754902-1');
 
 
 //GA ID
@@ -28,6 +30,12 @@ class MoneyInput extends Component{
   handleSubmit(event) {
 
     this.setState({calculateBtn:"calculateBtn animate"});
+
+    //Google Analytics
+    ReactGA.event({
+      category: 'Calculations',
+      action: 'Calculated a value',
+      });
 
     FetchPrice(this.props.startDate)
     .then(value =>{
